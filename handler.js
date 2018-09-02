@@ -1,13 +1,17 @@
 'use strict';
 
 module.exports.hello = async (event, context) => {
-  const {first, second} = event;
-  const added = first + second;
+  
+  console.log(event.pathParameters.name);
+
+  const name = event.pathParameters.name;
+  const reply = `Hello there, ${name}!`
+
   return {
     statusCode: 200,
     body: JSON.stringify({
       //message: 'Go Serverless v1.0! Your function executed successfully!',
-      message: "Hello there!"
+      message: JSON.stringify(reply)
     }),
   };
 
