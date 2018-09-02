@@ -1,0 +1,23 @@
+{
+  "name": "aws-test",
+  "version": "1.0.0",
+  "description": "aws-test",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nath-thoms/aws-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nath-thoms/aws-test/issues"
+  },
+  "homepage": "https://github.com/nath-thoms/aws-test#readme",
+  "devDependencies": {
+    "serverless-offline": "^3.25.10"
+  }
+}
