@@ -62,9 +62,10 @@ functions:
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
     events:
-      - http:
-          path: message/{name}
-          method: get
+      - schedule: rate(1 minute)
+      # - http:
+      #     path: message
+      #     method: get
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
